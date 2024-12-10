@@ -1,0 +1,158 @@
+body {
+  background-image: url("med.jpg");
+}
+
+.container {
+  background-image: url("med.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 450px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #212028;
+  color: #fff;
+  border: 8px solid #333;
+  
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #00bfff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00bfff;
+}
+
+
+
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.form label {
+  position: relative;
+  width: 100%;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 5px 5px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label select.input {
+  padding: 10px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form label .input + span,
+.select-label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span,
+.select-label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span,
+.select-label .input:focus + span,
+.select-label .input:valid + span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.select-label select.input:valid + span {
+  top: 20px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 100px;
+  width: 100PX;
+  color: #fff;
+  font-size: 16px;
+  background-color: #00bfff;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

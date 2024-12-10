@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="../static/css/appointmentSTYLE.css">
+</head>
+<body>
+<center>
+    <div class="container">  <form class="form" action="../index.html">
+    <p class="title">Book Appointment</p>
+    <p class="message">Enter your details to get your appointment booked hassle-free!</p>
+    <div class="flex">
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>Firstname</span>
+        </label>
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>Lastname</span>
+        </label>
+    </div>  
+    <label>
+        <input class="input" type="tel" placeholder="" required="">
+        <span>Mobile Number</span>
+    </label>
+            
+    <label>
+        <input class="input" type="email" placeholder="" required="">
+        <span>Email</span>
+    </label> 
+
+     
+
+    <label class="select-label">
+        <select class="input" name="diagnosis" id="diagnosis" required>
+            <option value="" disabled selected></option>
+            <option value="general">General Checkup</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="neurology">Neurology</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="psychiatry">Psychiatry</option>
+        </select>
+        <span>Diagnosis</span>
+    </label>
+
+    <label>
+        <input class="input" type="date" id="appointmentDate" name="appointmentDate" required>
+        <span>Appointment Date</span>
+    </label>
+    
+    <button class="submit">Submit</button>
+    <br>
+</form>
+</center>
+<script src="../static/js/appointmentJAPPS.js"></script>
+</body>
+</html>
